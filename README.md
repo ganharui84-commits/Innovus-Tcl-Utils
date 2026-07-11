@@ -10,7 +10,7 @@
 本仓库按芯片物理设计的标准 Flow 阶段进行模块化管理：
 
 ```text
-.
+
 ├── scripts/
 │   ├── dft-scan-reorder/        # DFT 扫描链动态追踪与自动重连模块
 │   │   ├── auto_scan_Reorder.tcl
@@ -18,7 +18,8 @@
 │   ├── floorplan_utils/         # (规划中) 宏单元摆放与电源网格规划辅助
 │   └── cts_optimization/        # (规划中) 时钟树综合与 Skew 优化脚本
 └── README.md                    # 全局导航与项目说明
-Tested Environments (实测项目背景)
+```
+##Tested Environments (实测项目背景)
 
 本仓库内的自动化脚本均已在以下真实设计环境中完成极限测试与验证：
 
@@ -29,7 +30,8 @@ Scale: > 47,000 instances (高密度实例)
 EDA Platform: Cadence Innovus Implementation System
 
 Challenge Resolved: 在无 .scandef 文件的苛刻条件下，成功利用 Tcl 内存级探测实现了上万个触发器的多并行扫描链完美重连，有效释放了布线轨道（Routing Tracks），显著优化了整体 PPA 指标。
-About the Author (关于作者)
+
+##About the Author (关于作者)
 
 Li Yihao (李艺浩)
 
